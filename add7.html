@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <title>The Odin Project Javascript Practice</title>
+  </head>
+
+  <body>
+    <h1 style="font-size: 12px; font-family: 'sans serif'">
+    The Odin's Project's Web Development 101 - Fundamentals Part 3
+    </h1>
+
+    <p id='func'></p>
+    <p id='func2'></p>
+    <p id='func3'></p>
+    <p id='func4'></p>
+
+    <script>
+    //Write a function called add7 that takes one number and returns that number + 7.
+      let add7 = num =>  (num + 7);     
+      document.getElementById('func').innerHTML = add7(4);
+
+    //Write a function called multiply that takes 2 numbers and returns their product.     
+      function multiply(num1, num2) {    
+        return num1 * num2;    
+      }    
+      document.getElementById('func2').innerHTML = multiply(3, 4);
+      
+    //Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+			function capitalize(str) {
+      	let capRemoved = str.toLowerCase(); //to remove any uppercase letter in str
+        let firstLetter = str.charAt(0); //to get first letter of str
+        let capFirstLetter = firstLetter.toUpperCase(); //so that first letter is in uppercase
+        return capFirstLetter + capRemoved.slice(1);
+      }
+      document.getElementById('func3').innerHTML = capitalize("heLLo");
+		
+    //Write a function called lastLetter that takes a string and returns the very last letter of that string: lastLetter("abcd") should return "d".
+    	function lastLetter(str) {
+      	return str.slice(-1);
+      }
+      document.getElementById('func4').innerHTML = lastLetter("I am a string");
+
+    
+
+    </script>
+
+  </body>
+
+
+</html>
