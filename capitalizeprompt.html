@@ -5,11 +5,12 @@
 </head>
 <body>
   <script>
- 	const str = prompt  ("insert any word with capitals and non capitals")
-  	
-  	const newStr = `${str[0].toUpperCase()}${str.slice(1)}`;
-  	console.log("Original String:", str)
-  	console.log("New String:", newStr);
+ const str = prompt ("insert any word")
+
+	console.log("original:", str)
+
+	str1 = str.toLowerCase()
+	console.log("new:", str1.charAt(0).toUpperCase()+str1.slice(1))
 
   </script>
 </body>
